@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESQA Beauty | Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ESQA BEAUTY</h1>
+    <p>Order Your Favorite Makeup</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="produk.html">Produk</a>
+    <a href="pemesanan.html">Pemesanan</a>
+    <a href="kredit.html">Kredit</a>
+</nav>
+
+<div class="container">
+
+    <section>
+        <h2>Form Pemesanan</h2>
+
+        <p>
+            Silakan isi formulir berikut untuk
+            melakukan pemesanan produk ESQA.
+        </p>
+
+        <form id="orderForm">
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama"
+            placeholder="Masukkan nama lengkap"
+            required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"
+            placeholder="nama@email.com"
+            required>
+
+            <label for="alamat">Alamat Pengiriman</label>
+            <textarea id="alamat" rows="4"
+            placeholder="Masukkan alamat lengkap"
+            required></textarea>
+
+            <label for="produk">Pilih Produk</label>
+            <select id="produk" required>
+                <option value="">-- Pilih Produk --</option>
+                <option value="Lip Tint" data-price="129000">
+                    Lip Tint - Rp129.000
+                </option>
+                <option value="Velvet Lip" data-price="149000">
+                    Velvet Lip - Rp149.000
+                </option>
+                <option value="Lip Cream" data-price="139000">
+                    Lip Cream - Rp139.000
+                </option>
+                <option value="Blush" data-price="135000">
+                    Blush - Rp135.000
+                </option>
+                <option value="Highlighter" data-price="145000">
+                    Highlighter - Rp145.000
+                </option>
+                <option value="Foundation" data-price="189000">
+                    Foundation - Rp189.000
+                </option>
+                <option value="Eyeshadow" data-price="175000">
+                    Eyeshadow - Rp175.000
+                </option>
+                <option value="Mascara" data-price="119000">
+                    Mascara - Rp119.000
+                </option>
+                <option value="Eyeliner" data-price="99000">
+                    Eyeliner - Rp99.000
+                </option>
+            </select>
+
+            <label for="jumlah">Jumlah Produk</label>
+            <input type="number" id="jumlah"
+            min="1" max="100" value="1" required>
+
+            <label for="bayar">Metode Pembayaran</label>
+            <select id="bayar" required>
+                <option value="">-- Pilih Pembayaran --</option>
+                <option value="Transfer Bank">
+                    Transfer Bank
+                </option>
+                <option value="COD">
+                    COD (Bayar di Tempat)
+                </option>
+                <option value="E-Wallet">
+                    E-Wallet
+                </option>
+            </select>
+
+            <button type="submit" class="btn">
+                Buat Pesanan
+            </button>
+
+        </form>
+
+        <div class="info-box" id="hasil"
+        style="display:none;">
+            <h2>Ringkasan Pesanan</h2>
+            <p id="ringkasan"></p>
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>Keira Haiza Anindya XI-9 | Website Project</p>
+</footer>
+
+ 
+</script>
+
+</body>
+</html>

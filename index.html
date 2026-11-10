@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESQA Beauty | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header-banner">
+    <img src="img/hheader.jpg" alt="ESQA Beauty Header">
+    <div class="header-text">
+        <h1>ESQA BEAUTY</h1>
+        <p>Beauty Begins With You </p>
+    </div>
+
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="produk.html">Produk</a>
+    <a href="pemesanan.html">Pemesanan</a>
+    <a href="kredit.html">Kredit</a>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Discover Your Beauty</h2>
+            <p>
+                Selamat datang di ESQA Beauty!
+                Temukan berbagai produk makeup dengan
+                warna cantik untuk melengkapi penampilanmu.
+                Tampil percaya diri dan ekspresikan dirimu
+                dengan pilihan makeup favoritmu.
+            </p>
+            <a href="produk.html" class="btn">
+                Lihat Koleksi Produk
+            </a>
+        </div>
+
+        <img class="product-img"
+        src="img/esqa.jpg"
+        alt="ESQA Beauty Makeup">
+    </section>
+
+    <section>
+        <h2>Welcome to ESQA</h2>
+        <p>
+            ESQA merupakan brand kecantikan yang dikenal dengan berbagai 
+	    pilihan produk makeup, mulai dari face, eyes hingga lippies. 
+	    Disini anda bisa mengetahui informasi lebih lanjut dan katalog 
+	    produk ESQA, sekaligus melakukan pemesanan online agar dengan mudah.
+        </p>
+    </section>
+
+    <section>
+        <h2>Our Beauty Collection</h2>
+
+        <div class="product-grid">
+            <div class="card">
+                <img class="product-img"
+                src="img/lips.jpg"
+                alt="Lip Products">
+
+                <h3>Lip Collection</h3>
+                <p>Temukan warna bibir favoritmu.</p>
+                <a href="produk.html#lip" class="btn">
+                    Lihat Lip
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/face.jpg"
+                alt="Face Products">
+
+                <h3>Face Collection</h3>
+                <p>Lengkapi tampilan makeup wajah.</p>
+                <a href="produk.html#face" class="btn">
+                    Lihat Face
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/eyes.jpg"
+                alt="Eye Products">
+
+                <h3>Eye Collection</h3>
+                <p>Eksplorasi makeup untuk mata.</p>
+                <a href="produk.html#eye" class="btn">
+                    Lihat Eye
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Beauty Inspiration</h2>
+        <p>
+            Tonton video berikut untuk mendapatkan
+            inspirasi makeup dan kecantikan.
+        </p>
+
+       <iframe
+    src="https://www.youtube.com/embed/wHRdKPL8o18"
+    title="ESQA Beauty Inspiration"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+    </section>
+
+</div>
+
+<footer>
+    <p>Keira Haiza Anindya XI-9| Website Project</p>
+    </footer>
+
+<script>
+    document.querySelectorAll(".product-img")
+    .forEach(function(img) {
+        img.addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>

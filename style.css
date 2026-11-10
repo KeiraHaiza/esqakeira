@@ -1,0 +1,374 @@
+
+/* =========================
+   ESQA BEAUTY - STYLE
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #633d4b;
+    background: linear-gradient(
+        135deg,
+        #fff8fb,
+        #ffe3ed,
+        #fff5e8
+    );
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(
+        90deg,
+        #f8c5d7,
+        #fff5f8,
+        #e8c78d
+    );
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #d5ad65;
+}
+
+header h1 {
+    color: #a65d78;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #80505e;
+}
+
+/* NAVIGASI */
+
+nav {
+    background: linear-gradient(
+        90deg,
+        #b76e87,
+        #d99aad,
+        #c9a15c
+    );
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #b76e87;
+    transform: translateY(-4px);
+}
+
+/* KONTEN UTAMA */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #ae6681;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #a16b4c;
+    margin-bottom: 10px;
+}
+
+/* HERO BERANDA */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 45px 30px;
+    background: linear-gradient(
+        120deg,
+        #f5c5d7,
+        #fff9fb,
+        #f0dfb9
+    );
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #c99aaa55;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    color: #a14d70;
+}
+
+.hero img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* GAMBAR DAN ANIMASI */
+
+.product-img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: linear-gradient(
+        135deg,
+        #fff5f8,
+        #fce1eb,
+        #fff0d5
+    );
+    border-radius: 18px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.4s,
+                box-shadow 0.4s;
+}
+
+.product-img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px #c58b9c66;
+}
+
+/* KLIK GAMBAR */
+
+.product-img.active {
+    transform: scale(1.12) rotate(5deg);
+    box-shadow: 0 0 25px #d9a7bb;
+    border: 2px solid #c99d56;
+}
+
+/* TOMBOL */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(
+        90deg,
+        #bd718f,
+        #d4a65f
+    );
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 5px 15px #b76e8766;
+}
+
+/* KATALOG PRODUK */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(
+        160deg,
+        #ffffff,
+        #fff0f5,
+        #fff8e9
+    );
+    border: 1px solid #e7c5cf;
+    padding: 20px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 5px 15px #c58b9c33;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.price {
+    color: #b16c83;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FORM */
+
+form {
+    background: linear-gradient(
+        135deg,
+        #fff,
+        #ffe8f0,
+        #fff4dc
+    );
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #c58b9c44;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #d9a6b8;
+    border-radius: 12px;
+    background: #fffafb;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #d4a65f;
+}
+
+/* IFRAME */
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: 3px solid #dfb9c5;
+    border-radius: 20px;
+    background: white;
+}
+
+/* KOTAK INFORMASI */
+
+.info-box {
+    background: linear-gradient(
+        120deg,
+        #fff,
+        #fce3eb,
+        #fff1d7
+    );
+    border-left: 5px solid #c9a15c;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: linear-gradient(
+        90deg,
+        #b76e87,
+        #d99aad,
+        #c9a15c
+    );
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
+.header-banner {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header-banner {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.header-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

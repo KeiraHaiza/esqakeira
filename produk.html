@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESQA Beauty | Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ESQA BEAUTY</h1>
+    <p>Explore Our Products</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="produk.html">Produk</a>
+    <a href="pemesanan.html">Pemesanan</a>
+    <a href="kredit.html">Kredit</a>
+</nav>
+
+<div class="container">
+
+    <section>
+        <h2 id="lip">Lip Collection ♡</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img class="product-img"
+                src="img/liptint.jpg"
+                alt="Lip Tint">
+                <h3>Lip Tint</h3>
+                <p>Warna bibir cantik untuk sehari-hari.</p>
+                <p class="price">Rp129.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/lipvelvet.jpg"
+                alt="Velvet Lip">
+                <h3>Velvet Lip</h3>
+                <p>Tampilan bibir dengan hasil velvet.</p>
+                <p class="price">Rp149.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/lipgloss.jpg"
+                alt="Lip Gloss">
+                <h3>Lip Gloss</h3>
+                <p>Produk bibir dengan pilihan warna menarik.</p>
+                <p class="price">Rp139.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2 id="face">Face Collection ♡ </h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img class="product-img"
+                src="img/blush.jpg"
+                alt="Blush">
+                <h3>Blush</h3>
+                <p>Memberikan sentuhan warna pada pipi.</p>
+                <p class="price">Rp135.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/highlighter.jpg"
+                alt="Highlighter">
+                <h3>Highlighter</h3>
+                <p>Memberikan efek kilau pada makeup.</p>
+                <p class="price">Rp145.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/cushion.jpg"
+                alt="Cushion">
+                <h3>Cushion</h3>
+                <p>Produk dasar untuk makeup wajah.</p>
+                <p class="price">Rp189.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2 id="eye">Eye Collection ♡ </h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img class="product-img"
+                src="img/eyeshadow.jpg"
+                alt="Eyeshadow">
+                <h3>Eyeshadow</h3>
+                <p>Palet warna untuk kreasi riasan mata.</p>
+                <p class="price">Rp175.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/mascara.jpg"
+                alt="Mascara">
+                <h3>Mascara</h3>
+                <p>Melengkapi tampilan riasan mata.</p>
+                <p class="price">Rp119.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+            <div class="card">
+                <img class="product-img"
+                src="img/eyeliner.jpg"
+                alt="Eyeliner">
+                <h3>Eyeliner</h3>
+                <p>Membantu membentuk garis mata.</p>
+                <p class="price">Rp99.000</p>
+                <a href="pemesanan.html" class="btn">
+                    Pesan
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Keira Haiza Anindya XI-9 | Website Project</p>
+</footer>
+
+<script>
+    document.querySelectorAll(".product-img")
+    .forEach(function(img) {
+        img.addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>

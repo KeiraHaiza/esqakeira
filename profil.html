@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESQA Beauty | Profil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ESQA BEAUTY</h1>
+    <p>About Us</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil</a>
+    <a href="produk.html">Produk</a>
+    <a href="pemesanan.html">Pemesanan</a>
+    <a href="kredit.html">Kredit</a>
+</nav>
+
+<div class="container">
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>About ESQA</h2>
+            <p>
+                ESQA merupakan beauty brand lokal Indonesia yang menghadirkan produk makeup dengan estetika modern. ESQA hadir untuk menemani setiap perempuan dalam mengekspresikan kecantikan dan karakter dirinya dengan cara yang effortless dan elegan. Terdapat berbagai pilihan produk untuk complexion, eyes, dan lips, ESQA menawarkan pengalaman makeup yang dapat disesuaikan dengan kebutuhan dan gaya setiap individu. </p>
+        </div>
+
+        <img class="product-img"
+        src="img/esqaa.jpg"
+        alt="ESQA">
+    </section>
+
+    <section>
+        <h2>Why ESQA?</h2>
+        <div class="info-box">
+            <p>♡ Produk dengan tampilan elegan dan modern</p>
+	    <p>♡ Pilihan makeup yang beragam</p>
+	    <p>♡ Cocok untuk berbagai gaya dan kesempatan</p>
+	    <p>♡ Mengutamakan kenyamanan dalam penggunaan</p>
+	    <p>♡ Mendukung perkembangan beauty brand lokal Indonesia</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Keira Haiza Anindya XI-9| Website Project</p>
+</footer>
+
+<script>
+    document.querySelectorAll(".product-img")
+    .forEach(function(img) {
+        img.addEventListener("click", function() {
+            this.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>
